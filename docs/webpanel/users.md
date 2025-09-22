@@ -1,7 +1,7 @@
 ### Users Page Description
 
 <p align="center">
- <img src="https://github.com/user-attachments/assets/1be823ef-97ed-44dc-aae9-51f2ab2f72e2" width="700" height="500">
+ <img src="https://github.com/user-attachments/assets/cca881cb-57bd-49b5-808f-6c099c937ede" width="900" height="700">
 </p>
 
 On the user page, you can manage your users, which are listed.
