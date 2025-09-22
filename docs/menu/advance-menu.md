@@ -345,6 +345,28 @@ After running this option, the `Hysteria2` core will be updated to the latest ve
 
 ---
 
-### 17. Uninstall Script (Hysteria2)
+### 17. IP Limiter Menu
 
-After selecting this option, all services and files related to the script and core will be removed.
+Submenu:
+
+```
+
+1. Start IP Limiter Service
+2. Stop IP Limiter Service
+3. Change IP Limiter Configuration
+4. Back
+
+```
+
+- Option `1`: Activate the service.  
+  - Enter `Block Duration (seconds, default: 60)` to limit users.  
+  - Enter `Max IPs per User (default: 1)`.  
+
+- Option `2`: Stop the service.  
+- Option `3`: Edit the above values.
+
+---
+
+### 18. Uninstall Hysteria2
+
+Removes all services, script files, and core files.
