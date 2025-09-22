@@ -9,8 +9,7 @@ After activation, go to your Telegram and `start` the bot.
 Once the bot is started, the menu will be displayed:
 
 <p align="center">
-
-<img src="https://github.com/user-attachments/assets/6dc5fc29-0dbb-4729-9757-dca4388c0404" width="300" height="500">
+<img width="300" height="600" alt="image" src="https://github.com/user-attachments/assets/30b8b0dc-4565-4e32-8196-0065cc6b0b40" />
 </p>
 
 ----
@@ -123,14 +122,27 @@ After selecting, you will be prompted for the username, and after sending the co
 After selecting this option, the server information will be sent to you in a message.
 
 ```
-📈 CPU Usage: 6.2%
-📋 Total RAM: 1963MB
-💻 Used RAM: 345MB
-👥 Online Users: 2
+🕒 Uptime: 1d 22h 36m (since 2025-09-20 13:35)
+🖥️ Server IPv4: ***.***.***.***
+🖥️ Server IPv6: ****:***:****:****::1
+📈 CPU Usage: 5.0%
+💻 Used RAM: 640MB / 3826MB
+👥 Online Users: 1
 
-🚦Total Traffic:
-🔼16.91 GB uploaded
-🔽239.35 GB downloaded
+🔼 Upload Speed: 261.44 KB/s
+🔽 Download Speed: 361.29 KB/s
+📡 TCP Connections: 40
+📡 UDP Connections: 1
+
+📊 Traffic Since Last Reboot:
+   🔼 Total Uploaded: 74.98 GB
+   🔽 Total Downloaded: 76.19 GB
+   📈 Combined Traffic: 151.17 GB
+
+📊 User Traffic (All Time):
+   🔼 Uploaded Traffic: 64.17 MB
+   🔽 Downloaded Traffic: 1.40 GB
+   📈 Total Traffic: 1.47 GB
 ```
 * **Developer Note**: Basic system monitoring info and total traffic stats.
 
@@ -164,4 +176,5 @@ Select `Inline Mode` and press `Turn On`.
 <p align="center">
 <img src="https://returnfi.github.io/Blitz-docs/Picture/telegram_search.gif" width="320" height="200">
 </p>
+
 
