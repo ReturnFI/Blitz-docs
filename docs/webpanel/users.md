@@ -4,26 +4,115 @@
  <img src="https://github.com/user-attachments/assets/cca881cb-57bd-49b5-808f-6c099c937ede" width="900" height="700">
 </p>
 
-On the user page, you can manage your users, which are listed.
+This page is designed for managing users. You can **view, search, filter, add, edit, and delete** users. It also provides options to **display QR Codes** and **extract links**.
 
-#### Adding Users and Searching
+---
 
-1.  Add User: To add a user, select the + button. In the opened page, enter the following values:
+## Main Features
 
-    *   Username: The user's name
-    *   Traffic Limit (GB): The user's data limit in gigabytes
-    *   Expiration Days: The user's duration in days (as a number)
+### 1. User List
+- The user table includes:
+  - **Username**
+  - **Status** (Online, Offline, Hold, Conflict)
+  - **Traffic Usage**
+  - **Expiry Date & Days**
+  - **Day Usage**
+  - **Enable/Disable**
+  - **Configs (QR Codes)**
+  - **Actions (Edit, Reset, Delete)**
 
-2.  Search User: To search for a user, simply enter the username in the `Search` box.
+> On mobile, user details are shown in an **accordion view** for better readability.
 
-#### User Table Description
+---
 
-1.  `status` row: This row indicates whether the user is online, offline, or inactive.
-2.  `Username` row: Displays the username.
-3.  `Quota` row: Displays the user's defined data limit.
-4.  `Used` row: Displays the amount of data used by the user.
-5.  `Expiry Date` row: Displays the user's expiration date and time.
-6.  `Expiry Days` row: Displays the user's defined duration in days.
-7.  `Enable` row: Shows whether the user is enabled or disabled.
-8.  `Configs` row: Displays the user's configurations as a `qrcode`. To get the link, simply click on the `qrcode` to copy the user's configuration or subscription link.
-9.  `Actions` row: Includes three buttons, respectively: Edit - Reset - Delete.
+### 2. User Filters
+At the top of the table, there are buttons to filter users:
+- `All` : Show all users
+- `Hold` : Show users with **Hold** status
+- `Online` : Show online users
+- `Enable` : Show enabled users
+- `Disable` : Show disabled users
+
+On mobile, these filters are grouped inside a **Dropdown** menu.
+
+---
+
+### 3. Search
+- A **Search** field is available at the top-right of the table.
+- Simply type part of a username to automatically filter the list.
+
+---
+
+### 4. Add User
+Click the <kbd>+</kbd> button to open a **modal window**.
+
+#### Single User (Add User)
+- **Username** (required, only letters, numbers, and `_`)
+- **Traffic Limit (GB)**
+- **Expiration Days**
+- **Unlimited IP** (if the IPLimit service is enabled)
+
+#### Bulk Add
+- **Username Prefix**
+- **Number of Users**
+- **Start Number**
+- **Traffic Limit**
+- **Expiration Days**
+- Option to enable **Unlimited IP**
+
+---
+
+### 5. Edit User
+- The ✏️ Edit button is available next to each user.
+- You can:
+  - Change the **Username**
+  - Change the **Traffic Limit**
+  - Change the **Expiration Days**
+  - **Block/Unblock** the user
+  - Enable/disable the **Unlimited IP** option
+
+---
+
+### 6. Reset & Delete
+- **Reset (↩):** Reset a user
+- **Delete (🗑):** Permanently delete a user
+- Multiple users can be selected and deleted in bulk.
+
+---
+
+### 7. QR Code
+- By clicking the **QR Code** icon, you can view the user’s configurations:
+  - IPv4
+  - IPv6
+  - Normal SUB
+- Each QR code is clickable, and the corresponding link will be copied to the clipboard.
+
+---
+
+### 8. Extract Links
+- Select multiple users and click the **🔗 Show Links** button.
+- A **modal window** will appear allowing you to choose:
+  - IPv4
+  - IPv6
+  - Normal SUB
+  - Nodes
+- You can then:
+  - **Extract** the links
+  - **Copy** all links at once
+
+---
+
+## Important Notes
+- All requests are connected to backend APIs (Flask).
+- **Username validation** is applied (only `a-z`, `A-Z`, `0-9`, `_` are allowed).
+- If the **IPLimit** service is active, options related to `Unlimited IP` will be visible.
+
+---
+
+## Shortcuts
+- <kbd>+</kbd> → Add User  
+- <kbd>🔍</kbd> → Search  
+- <kbd>🗑</kbd> → Delete User(s)  
+- <kbd>🔗</kbd> → Show Links  
+- <kbd>📶</kbd> → Filter Online Users  
+
