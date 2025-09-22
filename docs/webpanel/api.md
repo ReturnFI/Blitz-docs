@@ -14,6 +14,6 @@ Example:
 https://example.com:8443/31fcba9356712c6efdabc34be2563a78/docs
 ```
 
-To use the panel's `API`, you need the token generated during installation.  You can find it and related instructions using this [link](https://returnfi.github.io/Hys2-docs/menu/advance-menu/#8-web-panel).
+To use the panel's `API`, you need the token generated during installation.  You can find it and related instructions using this [link](https://returnfi.github.io/Blitz-docs/menu/advance-menu/#8-web-panel).
 
 After obtaining the token, click the green `Authorize` button on the right side of the page, enter your token in the `Value` field, and click the `Authorize` button.

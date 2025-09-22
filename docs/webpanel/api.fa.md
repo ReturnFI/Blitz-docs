@@ -15,7 +15,7 @@
 https://example.com:8443/31fcba9356712c6efdabc34be2563a78/docs
 ```
 
-برای استفاده از `API` پنل نیاز دارید به توکن تولید شده در زمان نصب که میتوانید از این [لینک](https://returnfi.github.io/Hys2-docs/menu/advance-menu/#8-web-panel) و توضیحات
+برای استفاده از `API` پنل نیاز دارید به توکن تولید شده در زمان نصب که میتوانید از این [لینک](https://returnfi.github.io/Blitz-docs/menu/advance-menu/#8-web-panel) و توضیحات
 
 توکن احزار هویت خود را دریافت نمایید.
 

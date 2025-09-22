@@ -6,7 +6,7 @@
 
 ### Activation Tutorial
 
-To activate the web panel, read this [link](https://returnfi.github.io/Hys2-docs/menu/advance-menu/#8-web-panel).
+To activate the web panel, read this [link](https://returnfi.github.io/Blitz-docs/menu/advance-menu/#8-web-panel).
 
 ----
 

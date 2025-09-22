@@ -2,7 +2,7 @@
 
 ## آموزش فعال سازی
 
-طبق آموزش این [لینک](https://returnfi.github.io/Hys2-docs/menu/advance-menu/#5-telegram-bot) بات تلگرام میتونید فعال کنید.
+طبق آموزش این [لینک](https://returnfi.github.io/Blitz-docs/menu/advance-menu/#5-telegram-bot) بات تلگرام میتونید فعال کنید.
 
 بعد از فعال سازی وارد تلگرام خودتون بشید و بات رو `start` کنید.
 
@@ -132,13 +132,12 @@
 
 ## بکاپ (Backup Server)
 
-با انتخاب این گزینه از لیست فایل های زیر در قالب یک فایل `zip` بر اساس ساعت و روز برای شما ارسال میشود.
+با انتخاب این گزینه از لیست فایل های زیر و دیتابیس در قالب یک فایل `zip` بر اساس ساعت و روز برای شما ارسال میشود.
 
 ``` shell
 FILES_TO_BACKUP=(
     "/etc/hysteria/ca.key"
     "/etc/hysteria/ca.crt"
-    "/etc/hysteria/users.json"
     "/etc/hysteria/config.json"
     "/etc/hysteria/.configs.env"
 )
@@ -158,7 +157,7 @@ FILES_TO_BACKUP=(
 ### ویدئو
 
 <p align="center">
-<img src="https://returnfi.github.io/Hys2-docs/Picture/telegram_search.gif" width="320" height="200">
+<img src="https://returnfi.github.io/Blitz-docs/Picture/telegram_search.gif" width="320" height="200">
 </p>
 
 

@@ -2,7 +2,7 @@
 
 ## Activation Tutorial
 
-You can activate the Telegram bot by following the instructions in this [link](https://returnfi.github.io/Hys2-docs/menu/advance-menu/#5-telegram-bot).
+You can activate the Telegram bot by following the instructions in this [link](https://returnfi.github.io/Blitz-docs/menu/advance-menu/#5-telegram-bot).
 
 After activation, go to your Telegram and `start` the bot.
 
@@ -162,6 +162,6 @@ Select `Inline Mode` and press `Turn On`.
 ### Video
 
 <p align="center">
-<img src="https://returnfi.github.io/Hys2-docs/Picture/telegram_search.gif" width="320" height="200">
+<img src="https://returnfi.github.io/Blitz-docs/Picture/telegram_search.gif" width="320" height="200">
 </p>
 

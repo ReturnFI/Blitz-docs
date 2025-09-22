@@ -4,7 +4,7 @@
 In this menu, you can manage users.
 <br>
 
-<img src="https://raw.githubusercontent.com/ReturnFI/Hys2-docs/refs/heads/main/docs/Picture/hysteria2menu.png">
+<img src="https://raw.githubusercontent.com/ReturnFI/Blitz-docs/refs/heads/main/docs/Picture/hysteria2menu.png">
 </p>
 
 ### Menu Description
@@ -95,7 +95,7 @@ After selecting **List Users**, the entire user list will be displayed:
 Username             Traffic Limit (GB)   Expiration (Days) Creation Date        Password                       Blocked
 jeff                 50                   120             2025-01-14           WWRDnembtjaooTJJXkBizOkY9fmyLzgE false
 return               30                   30              2025-01-14           eeDQW4ZwvqFBgZZjIqNUrgHY8za3Lc99 false
-hys2                 50                   30              2024-12-10           qAuwQ3b9kVsjoCHi9DtslWjtq9JMUbj4 true
+Blitz                 50                   30              2024-12-10           qAuwQ3b9kVsjoCHi9DtslWjtq9JMUbj4 true
 ```
 
 
@@ -114,7 +114,7 @@ jeff            392.00MB        9.45GB          Online
 -------------------------------------------------
 return          554.52MB        19.19GB         Online
 -------------------------------------------------
-hys2            4.82GB          143.71GB        Offline
+Blitz            4.82GB          143.71GB        Offline
 -------------------------------------------------
 ```
 

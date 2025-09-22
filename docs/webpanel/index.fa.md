@@ -6,7 +6,7 @@
 
 ### آموزش فعال سازی
 
-برای فعال سازی پنل وب آموزش این [لینک](https://returnfi.github.io/Hys2-docs/menu/advance-menu/#8-web-panel) را مطالعه کنید.
+برای فعال سازی پنل وب آموزش این [لینک](https://returnfi.github.io/Blitz-docs/menu/advance-menu/#8-web-panel) را مطالعه کنید.
 
 
 ----

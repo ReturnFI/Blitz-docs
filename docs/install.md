@@ -37,5 +37,5 @@ You can use any port of your choice. For example:
 ## Video
 ---
 <p align="center">
-<img src="https://returnfi.github.io/Hys2-docs/Picture/install.gif">
+<img src="https://returnfi.github.io/Blitz-docs/Picture/install.gif">
 </p>
