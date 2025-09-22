@@ -6,69 +6,131 @@
 
 ---
 
-#### Subscriptions Links
+# Settings Page Guide
 
-The `Subscriptions` tab includes two sub-tabs:
+This document provides a comprehensive guide to all the available options on the Settings page. The page is organized into several tabs, each managing a specific aspect of the service.
 
--   `SingBox` Subscription Link
+## Subscriptions
 
-    To activate the `SingBox` subscription link, you need a domain or subdomain and a free port on your server.
+This tab manages the web server that provides subscription links to users.
 
-    Enter your domain or subdomain in the `Domain` field, and enter a free port number in the `Port` field. Then, wait a few moments for the required services to be installed and for the message `SingBox started successfully!` to be displayed.
+### Service Control
 
--   `Normal` Subscription Link
+This is the primary control for the subscription service.
 
-    To activate the `Normal` subscription link, you need a domain or subdomain and a free port on your server.
+*   **Domain:** Enter the domain name (e.g., `sub.yourdomain.com`) where the subscription service will be accessible. Do **not** include `http://` or `https://`.
+*   **Port:** Specify the port on which the service will listen (e.g., `8080`).
+*   **Start Service:** After filling in the domain and port, click this button to start the web server.
+*   **Stop Service:** If the service is running, this button will appear to allow you to stop it.
 
-   Enter your domain or subdomain in the `Domain` field, and enter a free port number in the `Port` field. Then, wait a few moments for the required services to be installed and for the message  `Normal subscription started successfully!` to be displayed.
+### Configure Link
 
----
+This sub-tab becomes visible only after the subscription service has been started. It allows you to customize the URL path for subscription links.
 
-### Telegram Bot
+*   **Subscription Path Segment:** Enter a unique, simple string (e.g., `my-sub`) to create a custom path. This helps in making the subscription links less predictable. For example, using `my-sub` will result in links like `http://sub.yourdomain.com:8080/my-sub/...`.
+*   **Save Subpath:** Click to apply the new path segment.
 
-<p align="center">
- <img src="https://github.com/user-attachments/assets/3895c879-a1b9-4f91-be28-a0a3c202ec76" width="500" height="250">
-</p>
+## Telegram Bot
 
--   To activate the Telegram bot, you need the following:
-    -   Create a bot using the `@BotFather` bot and copy the bot token. Enter it in the `API Token` field.
-    -   Get your Telegram account's numerical ID using the `@userinfobot` bot and enter it in the `Admin ID` field.
+This tab allows you to integrate and manage a Telegram bot for administrative tasks and notifications.
 
-Then, click the `Start` button and wait for the message `Telegram bot started successfully!` to be displayed.
+*   **API Token:** Enter the unique token for your Telegram bot, obtained from the BotFather.
+*   **Admin ID:** Enter your numerical Telegram User ID to grant yourself administrative privileges for the bot.
+*   **Automatic Backup Interval (Hours):** Set a schedule for how often the bot should automatically back up your configuration (e.g., `12` for every 12 hours).
+*   **Start:** After entering the API Token and Admin ID, click to start the bot.
+*   **Stop:** If the bot is running, this button will stop it.
+*   **Save Interval:** While the bot is running, you can update the backup interval and click this button to save the change without restarting the bot.
 
----
+## Hysteria Settings
 
-### Change Port
+This section contains core configuration options for the Hysteria service itself.
 
-<p align="center">
- <img src="https://github.com/user-attachments/assets/9dbcea87-1bf8-4e7f-aa7c-6f1aa2f62c50" width="500" height="250">
-</p>
+*   **Change Port:** Modify the main port that the Hysteria service uses to listen for client connections.
+*   **Change SNI:** Set or change the Server Name Indication (SNI) domain. This is used to mimic traffic to a legitimate website, helping to avoid detection.
+*   **OBFS:** Enable or disable obfuscation (OBFS) for your Hysteria traffic. The current status is displayed, and you can toggle it with the **Enable/Disable OBFS** buttons.
+*   **Update GeoIP & GeoSite Files:** Use the buttons to download the latest GeoIP and GeoSite database files for specific countries (Iran, China, Russia). This is crucial for correctly applying routing rules.
 
-In this section, you can change the port of the main `Hysteria2` service.
+## IP Management
 
-This port is for the main `Hysteria2` service, and if changed, users will need to update their configurations.
+This tab is for managing the IP addresses and external server nodes associated with your setup.
 
----
+### Local Server IP / Domain
 
-### Change SNI
+Define the primary IP addresses that will be embedded in user configuration links.
 
-<p align="center">
- <img src="https://github.com/user-attachments/assets/d827da74-a8cb-4323-aa42-dfbbb599834b" width="500" height="250">
-</p>
+*   **IPv4 / Domain:** Enter the public IPv4 address or a domain name for the server.
+*   **IPv6 / Domain:** Enter the public IPv6 address or a domain name for the server.
 
-Using this tab, you can change the `SNI` that you selected during installation.
+### External Nodes
 
-Be aware that changing the `SNI` will change the `pinSHA256` values in the `config.json` file, and if users get disconnected, they will need to obtain the configuration again.
+If you have a multi-server setup, you can add external nodes here. These nodes will be available for inclusion in user configurations.
 
----
+*   **Add New Node:**
+    1.  Enter a descriptive **Node Name** (e.g., `Node-US`).
+    2.  Enter the **IP Address / Domain** of the external server.
+    3.  Click **Add Node**.
+*   **Manage Nodes:** The table lists all configured external nodes. You can delete a node by clicking the **Delete** button in its row.
 
-### Change IP
+## Extra Configs
 
-<p align="center">
- <img src="https://github.com/user-attachments/assets/b19f2ca7-23e6-4f9c-b424-1e6c5bc5ce30" width="500" height="250">
-</p>
+This feature allows you to add external proxy links (such as Vmess, Vless, SS, or Trojan) to all users' subscription links automatically.
 
-If you are using IP tunneling or floating, you can use this tab to change the `IP` values of your configurations.
+*   **Add New Configuration:**
+    1.  Enter a unique **Name** for the configuration (e.g., `My-Vmess-Link`).
+    2.  Paste the full proxy **URI** (e.g., `vmess://...`).
+    3.  Click **Add Config**.
+*   **Manage Configurations:** The table lists all added configurations. You can delete any of them using the **Delete** button.
 
--   `IPv4` field: Change the `IPv4` address of the configurations.
--   `IPv6` field: Change the `IPv6` address of the configurations.
+## Backup
+
+This section provides tools for backing up and restoring your entire panel and Hysteria configuration.
+
+*   **Restore from Backup:**
+    1.  Click **Choose File** and select a previously downloaded `.zip` backup file.
+    2.  Click **Upload and Restore**. A confirmation dialog will appear. The system will be restored to the state in the backup file.
+*   **Create New Backup:**
+    1.  Click **Download Backup** to generate and download a `.zip` file containing a full backup of your current settings.
+
+## IP Limit
+
+This tab controls a service that limits the number of IP addresses a single user can connect from simultaneously.
+
+### Service Control
+
+*   **Start:** Click to enable the IP limiting service.
+*   **Stop:** Click to disable the service.
+
+### Configuration
+
+This sub-tab is only active when the service is running.
+
+*   **Block Duration (seconds):** Set the amount of time in seconds that an IP address will be blocked after exceeding the limit.
+*   **Max IPs per User:** Define the maximum number of simultaneous IP addresses allowed for a single user.
+*   **Save Configuration:** Click to apply your changes.
+
+## Decoy Site
+
+Set up a decoy website to serve as a plausible front for your proxy service, making it harder to identify.
+
+*   **Domain:** Enter the domain that will point to your decoy site.
+*   **Decoy Site Path:** Provide the absolute path on the server where the decoy website's files (e.g., `index.html`) are located.
+*   **Setup Decoy:** Click to configure and start the decoy site service.
+*   **Stop Decoy:** If a decoy site is active, this button will appear to stop it.
+*   **Status:** The current status (Active or Not Active) is displayed on this tab.
+
+## WARP
+
+This tab allows you to manage the Cloudflare WARP service to route your server's outgoing traffic.
+
+*   **Install & Start WARP:** If WARP is not active, this button will install and start the service.
+*   **Stop & Uninstall WARP:** If WARP is active, this button will stop and completely remove the service.
+
+### WARP Routing Configuration
+
+When WARP is active, you can configure its routing behavior:
+
+*   **Route All Traffic through WARP:** Forces all of the server's outgoing traffic through the WARP network.
+*   **Route Popular Sites through WARP:** Only routes traffic to popular international sites through WARP.
+*   **Route Domestic Sites through WARP:** Only routes traffic to domestic sites (based on GeoIP) through WARP.
+*   **Block Adult Sites (WARP Family DNS):** Enables WARP's DNS filter to block adult content.
+*   **Save Configuration:** Click to apply your selected routing rules.
