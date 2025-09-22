@@ -1,7 +1,7 @@
 ## توضیحات صفحه تنظیمات
 
 <p align="center">
- <img src="https://github.com/user-attachments/assets/d125f1d9-4d79-4685-bc96-0d5a0eba7422" width="700" height="500">
+ <img src="https://github.com/user-attachments/assets/0853e535-f4ce-4c24-989e-8dc5bdf4d58f" width="800" height="900">
 </p>
 
 
